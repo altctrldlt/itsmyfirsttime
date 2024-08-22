@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .side-image {
+            position: fixed;
+            top: 0;
+            width: 200px; /* Adjust width as needed */
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: -1; /* Place behind content */
+        }
+
+        .left-side {
+            left: 0;
+            background-image: url('https://github.com/altctrldlt/itsmyfirsttime/blob/main/car.jpeg?raw=true'); /* Replace with your image URL */
+        }
+
+        .right-side {
+            right: 0;
+            background-image: url('path-to-right-image.jpg'); /* Replace with your image URL */
+        }
+
+        .content {
+            margin-left: 200px; /* Same as the width of the side images */
+            margin-right: 200px; /* Same as the width of the side images */
+            padding: 20px;
+            background-color: #f4f4f4; /* Background color for main content */
+            height: 100vh; /* Full viewport height */
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+
+        p {
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        a {
+            color: #000000; 
+            text-decoration: none; 
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #A3F7B5; 
+        }
+
+        button {
+            background-color: #2F9C95;
+            color: #1E2120;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #40C9A2;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Side images -->
+    <div class="side-image left-side"></div>
+    <div class="side-image right-side"></div>
+
+    <!-- Main content -->
+    <div class="content">
+        <h1 style="font-family: Verdana, sans-serif;">Cars! Cars! Cars!</h1>
+        <h2 style="font-weight: bold; color: #664147;">Warning! Exposed Parts Shown!</h2>
+        <p>If you do not want to see this, go to <a href="index.html">Home</a></p>
+        
+    </div>
+</body>
+</html>
