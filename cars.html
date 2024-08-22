@@ -9,50 +9,99 @@
             margin: 0;
             padding: 0;
             height: 100%;
-            overflow-x: hidden; /* Prevent horizontal scrolling */
             background-color: #ffffff;
             color: #000000;
         }
 
+        body {
+            font-family: Verdana, sans-serif;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            display: flex;
+            align-items: flex-start;
+            margin: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        .gallery-item img {
+            max-width: 200px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .gallery-item .description-small {
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .gallery-item .description-large {
+            font-size: 1em;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2F9C95;
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: bold;
+            color: #664147;
+        }
+
         p {
-            margin: 0;
-            padding: 10px 0;
+            text-align: center;
         }
 
         a {
-            color: #000000; 
+            color: #2F9C95; 
             text-decoration: none; 
         }
 
         a:hover {
             text-decoration: underline;
-            color: #A3F7B5; 
+            color: #40C9A2; 
         }
-
-        button {
-            background-color: #2F9C95;
-            color: #1E2120;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #40C9A2;
-        }
-
     </style>
 </head>
 <body>
-    
 
-    <!-- Main content -->
-    
-        <h1 style="font-family: Verdana, sans-serif;">Cars! Cars! Cars!</h1>
-        <h2 style="font-weight: bold; color: #664147;">Warning! Exposed Parts Shown!</h2>
+    <div class="gallery">
+        <h1>Cars! Cars! Cars!</h1>
+        <h2>Warning! Exposed Parts Shown!</h2>
         <p>If you do not want to see this, go to <a href="index.html">Home</a></p>
-        
-    
+
+        <!-- Gallery Item 1 -->
+        <div class="gallery-item">
+            <img src="https://github.com/altctrldlt/itsmyfirsttime/blob/main/car1.jpg?raw=true" alt="Description of Image 1">
+            <div>
+                <p class="description-small">Small Description 1</p>
+                <p class="description-large">This is a larger description of Image 1. It provides more detailed information about the image and its context.</p>
+            </div>
+        </div>
+
+        <!-- Gallery Item 2 -->
+        <div class="gallery-item">
+            <img src="image2.jpg" alt="Description of Image 2">
+            <div>
+                <p class="description-small">Small Description 2</p>
+                <p class="description-large">This is a larger description of Image 2. It offers more detailed information and context about the image.</p>
+            </div>
+        </div>
+
+        <!-- Add more gallery items as needed -->
+    </div>
+
 </body>
 </html>
